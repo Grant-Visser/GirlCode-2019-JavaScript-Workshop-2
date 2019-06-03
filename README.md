@@ -7,3 +7,7 @@ This repository contains exercise files for the Girlcode JavaScript workshop 2
 This repo will be using trunk based development on master. Please use `git pull --rebase` when pulling code, so your local repo changes will be applied to origin changes like a hat, no merges allowed.
 
 Please Note: We will be using [Bulma](https://bulma.io/) for styling the .html webpages because it is simple and pure CSS, over bootstrap and it's jQuery dependency.
+
+## Sources: 
+
+* https://codepen.io/paulhbarker/pen/mwOREz
