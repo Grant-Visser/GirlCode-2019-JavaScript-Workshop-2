@@ -84,3 +84,8 @@ Explain:
     - Why we use them
 Exercise: Link up the given html to the API provided
 Test: Converse of the explanation
+
+API Information: http://www.omdbapi.com
+API Key: 1070d254
+Sample:     http://www.omdbapi.com/?apikey=1070d254&s=lion%20king
+            http://www.omdbapi.com/?apikey=1070d254&s=Johnny%20English
