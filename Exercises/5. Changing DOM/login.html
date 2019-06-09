@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <link rel="stylesheet" href="../bulma.min.css" />
-    <link rel="stylesheet" href="../common.css" />
-  </head>
-  <body>
-    <div id="login">
-      <div class="login-card">
-        <div class="card-title">
-          <h1>GirlCode Movies</h1>
-        </div>
-        <div class="content">
-          <form method="POST" action="#">
-            <input
-              id="email"
-              type="email"
-              name="email"
-              title="email"
-              placeholder="Email"
-              required
-              autofocus
-            />
-            <input
-              id="password"
-              type="password"
-              name="password"
-              title="password"
-              placeholder="Password"
-              required
-            />
-            <div class="level options">
-              <div class="checkbox level-left">
-                <input type="checkbox" id="checkbox" class="regular-checkbox" />
-                <label for="checkbox"></label>
-                <span>Remember me</span>
-              </div>
-              <a class="btn btn-link level-right" href="#">Forgot Password?</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="../bulma.min.css" />
+  <link rel="stylesheet" href="../common.css" />
+</head>
+
+<body>
+  <div id="login">
+    <div class="login-card">
+      <div class="card-title">
+        <h1>GirlCode Movies</h1>
+      </div>
+      <div class="content">
+        <form method="POST" action="#">
+          <input id="email" type="email" name="email" title="email" placeholder="Email" required autofocus />
+          <input id="password" type="password" name="password" title="password" placeholder="Password" required />
+          <div class="level options">
+            <div class="checkbox level-left">
+              <input type="checkbox" id="checkbox" class="regular-checkbox" />
+              <label for="checkbox"></label>
+              <span>Remember me</span>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-          </form>
-        </div>
+            <a class="btn btn-link level-right" href="#">Forgot Password?</a>
+          </div>
+          <button onclick="AddValueToDom()" type="button" class="btn btn-primary">Login</button>
+        </form>
+      <div id="AppendDataHere">
+
+      </div>
       </div>
     </div>
-    <script src="./login.js"></script>
-  </body>
+  </div>
+  <script src="./login.js"></script>
+</body>
+
 </html>
