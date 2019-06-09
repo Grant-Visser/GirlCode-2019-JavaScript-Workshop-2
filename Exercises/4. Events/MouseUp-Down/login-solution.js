@@ -16,5 +16,3 @@ function mouseUPButton() {
     }
     console.log('Mouse up ' + emailAddress);
 }
-
-//<button type="button" class="btn btn-primary" onmousedown="mouseDownButton()" onmouseup=" mouseUPButton()">Login</button>
