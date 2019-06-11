@@ -1,6 +1,8 @@
-function fetchData() {
+function fetchData(searchString) {
   fetch(
-    "https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=1070d254&s=Lion%20King",
+    `https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=1070d254&s=${encodeURIComponent(
+      searchString
+    )}`,
     {
       mode: "cors",
       headers: {
@@ -14,17 +16,17 @@ function fetchData() {
       console.log("RAW", movies);
       handleMovies(movies.Search);
     })
-    .catch(function() {
-      console.log("boom");
+    .catch(function(error) {
+      console.error(error);
     });
 }
 
-fetchData();
+fetchData("Terminator");
 
-const handleMovies = movies => {
+function handleMovies(movies) {
   const names = [];
   for (const movie in movies) {
     names.push(movies[movie].Title);
   }
-  console.log(names);
-};
+  alert(names);
+}
