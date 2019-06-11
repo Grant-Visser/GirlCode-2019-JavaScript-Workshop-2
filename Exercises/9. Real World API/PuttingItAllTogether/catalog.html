@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movies</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="../../bulma.min.css" />
+    <link rel="stylesheet" href="./catalog.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar is-danger"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <img src="../../../gc.png" alt="" />
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a
+            class="navbar-item"
+            href="https://girlcode.co.za/"
+          >
+            Home
+          </a>
+
+          <a
+            class="navbar-item"
+            href="https://github.com/Grant-Visser/GirlCode-2019-JavaScript-Workshop-2"
+          >
+            Documentation
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <form onsubmit="findMovie()">
+          <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input
+                class="input is-large"
+                type="text"
+                placeholder="Find a movie"
+                id="searchbox"
+              />
+            </p>
+            <p class="control">
+              <button type="submit" class="button is-danger is-large">
+                Search
+              </button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline" id="column-container"></div>
+      </div>
+    </section>
+    <script src="./catalog.js"></script>
+  </body>
+</html>
