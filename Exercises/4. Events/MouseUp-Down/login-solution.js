@@ -9,10 +9,12 @@ function mouseDownButton() {
     console.log('Mouse Down ' + emailAddress);
 }
 
-function mouseUPButton() {
+function mouseUpButton() {
     let emailAddress = document.getElementById("email").value
     if (emailAddress === '') {
         emailAddress = 'Please type in the email address.'
     }
     console.log('Mouse up ' + emailAddress);
 }
+
+//<button onmousedown="mouseDownButton()" onmouseup="mouseUpButton()" type="button" class="btn btn-primary" >Login</button>
