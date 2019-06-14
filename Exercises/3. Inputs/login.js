@@ -6,7 +6,7 @@ function handleClick(){
 
 
     /* 
-    When you think you are done, 
+    When you are done, 
     click the "login" button on the HTML page to run this code
     */
 }
