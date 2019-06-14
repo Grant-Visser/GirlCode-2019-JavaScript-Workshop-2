@@ -1,8 +1,12 @@
 function handleClick(){
-    // Code your things in here
-    let emailInput = document.getElementById("email");
-    let passwordInput = document.getElementById("password");
+    // Get the Email and Password elements
 
-    alert("Email: " + emailInput.value);
-    alert("Password: " + passwordInput.value);
+
+    // Use "alert" to display their values
+
+
+    /* 
+    When you think you are done, 
+    click the "login" button on the HTML page to run this code
+    */
 }
